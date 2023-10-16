@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name = "SoccerAppUser")
+@Table(name = "SOCCER_APP_USER")
 public class SoccerAppUser {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

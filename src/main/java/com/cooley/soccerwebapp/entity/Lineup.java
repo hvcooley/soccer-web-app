@@ -7,6 +7,7 @@ import java.sql.Date;
 
 @Entity
 @Data
+@Table(name="LINEUP")
 public class Lineup {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,7 +21,7 @@ public class Lineup {
     private Date creationDate;
 
     @Column(name = "team_id")
-    private String teamId;
+    private Long teamId;
 
     @Column(name = "formation")
     private String formation;

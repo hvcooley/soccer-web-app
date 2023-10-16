@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name = "Team")
+@Table(name = "TEAM")
 public class Team {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,7 +13,7 @@ public class Team {
     private Long teamId;
 
     @Column(name = "owner_id")
-    private String ownerId;
+    private Long ownerId;
 
     @Column(name = "team_name")
     private String teamName;
